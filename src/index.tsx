@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "@fontsource/inter";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/200.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
