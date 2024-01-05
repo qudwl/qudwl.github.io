@@ -61,3 +61,24 @@ button {
 .active-li {
   border-bottom: 1px solid #000;
 }
+
+.projects {
+  display: grid;
+  width: 700px;
+  margin: 50px auto;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.projectCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 48px 100px rgba(17, 12, 46, 0.15);
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+}

@@ -1,4 +1,4 @@
-import Tab from "./Tab";
+import Tab from "../Tab";
 
 const Header = () => {
     return <header className='mt-2'>
