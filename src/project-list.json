@@ -4,5 +4,17 @@
     "description": "This is a description of project 1",
     "url": "https://qudwl.github.io/mac-website",
     "status": false
+  },
+  {
+    "name": "Weather App",
+    "description": "This is a description of project 2",
+    "url": "https://qudwl.github.io/weather-app",
+    "status": false
+  },
+  {
+    "name": "Tic Tac Toe",
+    "description": "This is a description of project 2",
+    "url": "https://qudwl.github.io/tic-tac-toe",
+    "status": false
   }
 ]

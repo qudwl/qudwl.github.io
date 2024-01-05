@@ -1,3 +1,8 @@
+:root {
+  --background-color: #f2f2f2;
+  --primary: #000;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -38,8 +43,12 @@
   align-items: center;
 }
 
-.flex-justify-space-around {
+.justify-space-around {
   justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
 }
 
 .h100p {
@@ -48,6 +57,14 @@
 
 .flex-gap {
   gap: 1em;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mt-1 {
@@ -64,7 +81,9 @@ button {
     sans-serif;
   background: none;
   border: none;
-  padding: 1.2rem;
+  padding: 1.2rem 0.5rem;
+  width: 100px;
+  box-sizing: border-box;
   font-size: 1.2rem;
 }
 
@@ -74,7 +93,7 @@ button {
 }
 
 .active-li {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--primary);
 }
 
 .projects {
@@ -87,13 +106,20 @@ button {
   gap: 2em;
 }
 
-.projectCard {
+.settings {
+  width: 400px;
+}
+
+.card {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 48px 100px rgba(17, 12, 46, 0.15);
   padding: 1.5rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
   box-sizing: border-box;
+}
+
+.projectCard {
   width: 200px;
   height: 200px;
 }
@@ -101,7 +127,6 @@ button {
 .projectCard:hover,
 .projectCard:focus-within {
   transform: scale(1.1);
-  transition-duration: 0.2s;
 }
 
 .tag {
@@ -130,6 +155,6 @@ button {
   background: #8acb88;
 }
 
-h2 {
+.projectCard h2 {
   font-size: 0.9em;
 }
