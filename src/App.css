@@ -26,9 +26,24 @@
   display: flex;
 }
 
-.flex-center {
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-justify-center {
   justify-content: center;
+}
+
+.flex-align-center {
   align-items: center;
+}
+
+.flex-justify-space-around {
+  justify-content: space-around;
+}
+
+.h100p {
+  height: 100%;
 }
 
 .flex-gap {
@@ -64,7 +79,7 @@ button {
 
 .projects {
   display: grid;
-  width: 700px;
+  width: calc(600px + 4em);
   margin: 50px auto;
   grid-template-columns: auto auto auto;
   justify-items: center;
@@ -81,4 +96,40 @@ button {
   box-sizing: border-box;
   width: 200px;
   height: 200px;
+}
+
+.projectCard:hover,
+.projectCard:focus-within {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.tag {
+  border-radius: 50dvh;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.5rem;
+  left: -0.5rem;
+}
+
+.success {
+  background: #48beff;
+}
+
+.in-progress {
+  background: #8acb88;
+}
+
+h2 {
+  font-size: 0.9em;
 }

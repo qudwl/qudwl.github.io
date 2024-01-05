@@ -1,18 +1,12 @@
-import Project from "../classes/Project";
-import ProjectCard from "./ProjectCard"
-
-const list = new Array<Project>();
-
-list.push(new Project("Project 1", "This is a description of project 1", "https://www.google.com", ["In Progrss"], ""));
+import ProjectCard from "./ProjectCard";
+import list from "../project-list.json";
 
 const Projects = () => {
-    return <div className="projects">
-        <ProjectCard project={list[0]} />
-        {/* <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard /> */}
-    </div>
+    return (
+        <div className="projects">
+            {list.map((project, index) => <ProjectCard key={index} project={project} />)}
+        </div>
+    );
 }
 
 export default Projects;

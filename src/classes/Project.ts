@@ -2,21 +2,14 @@ class Project {
   name: string;
   description: string;
   url: string;
-  tags: string[];
-  image: string;
+  // False = Still in progress, True = Finished
+  status: boolean;
 
-  constructor(
-    name: string,
-    description: string,
-    url: string,
-    tags: string[],
-    image: string
-  ) {
+  constructor(name: string, description: string, url: string, status: boolean) {
     this.name = name;
     this.description = description;
     this.url = url;
-    this.tags = tags;
-    this.image = image;
+    this.status = status;
   }
 }
 

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
 }
 
 code {
@@ -25,6 +26,7 @@ p {
 
 a {
   text-emphasis: none;
+  text-decoration: none;
   color: #000;
 }
 ul {
