@@ -2,7 +2,7 @@ import Project from "../classes/Project";
 
 const ProjectCard = ({ project }: { project: Project }) => {
     return (
-        <a href={project.url} target="_blank" rel="noreferrer" className='projectCard card'>
+        <a href={project.url} target="_blank" rel="noreferrer" className='projectCard card' title="(Opens in a new window)">
             <div className="h100p">
                 <div className={"ball " + (project.status ? "success" : "in-progress")} />
                 <div className="flex flex-column justify-space-around h100p">
