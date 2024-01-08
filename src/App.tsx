@@ -11,10 +11,17 @@ function App() {
 
   React.useEffect(() => {
     const darkMode = localStorage.getItem("darkMode");
+    const animations = localStorage.getItem("reduceAnimations");
     if (darkMode) {
-      setDarkMode(darkMode === "true");
+      changeDarkMode(darkMode === "true");
     } else {
       localStorage.setItem("darkMode", "false");
+    }
+
+    if (animations) {
+      changeReduceAnimations(animations === "true");
+    } else {
+      localStorage.setItem("reduceAnimations", "false");
     }
   }, []);
 
@@ -29,6 +36,33 @@ function App() {
   const changeDarkMode = (newValue: boolean) => {
     setDarkMode(newValue);
     localStorage.setItem("darkMode", newValue ? "true" : "false");
+    setColorChanges(newValue);
+  }
+
+  const setColorChanges = (mode: boolean) => {
+    if (mode) {
+      document.documentElement.style.setProperty("--background-color", "#1C1C1C");
+      document.documentElement.style.setProperty("--primary", "#fff");
+      document.documentElement.style.setProperty("--card-background-color", "#505050");
+    } else {
+      document.documentElement.style.setProperty("--background-color", "#f2f2f2");
+      document.documentElement.style.setProperty("--primary", "#000");
+      document.documentElement.style.setProperty("--card-background-color", "#fff");
+    }
+  }
+
+  const changeReduceAnimations = (newValue: boolean) => {
+    setReduceAnimations(newValue);
+    localStorage.setItem("reduceAnimations", newValue ? "true" : "false");
+    setAnimations(newValue);
+  }
+
+  const setAnimations = (mode: boolean) => {
+    if (mode) {
+      document.documentElement.style.setProperty("--animation-duration", "0s");
+    } else {
+      document.documentElement.style.setProperty("--animation-duration", "0.15s");
+    }
   }
 
   return (
@@ -41,7 +75,7 @@ function App() {
               darkMode={darkMode}
               setDarkMode={changeDarkMode}
               reduceAnimations={reduceAnimations}
-              setReduceAnimations={setReduceAnimations}
+              setReduceAnimations={changeReduceAnimations}
             />}
       </main>
     </>
