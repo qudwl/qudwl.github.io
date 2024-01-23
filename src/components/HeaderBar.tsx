@@ -1,4 +1,4 @@
-import { Title, Text, Stack, SegmentedControl } from "@mantine/core"
+import { Title, Text, Stack } from "@mantine/core"
 
 export const HeaderBar = () => {
     return (
