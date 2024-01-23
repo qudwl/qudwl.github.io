@@ -19,5 +19,11 @@
     "url": "https://qudwl.github.io/tic-tac-toe",
     "repository": "https://github.com/qudwl/tic-tac-toe",
     "isWebApp": true
+  },
+  {
+    "name": "MAUI Projects",
+    "description": "This is a description of project 2",
+    "url": "https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2021/10/shadow.png",
+    "repository": "https://github.com/qudwl/CSE382-Mobile-App-Development"
   }
 ]
