@@ -17,7 +17,6 @@ export default function App() {
           <Tabs.List justify='center'>
             <Tabs.Tab value='gallery'>Projects</Tabs.Tab>
             <Tabs.Tab value="about">About</Tabs.Tab>
-            <Tabs.Tab value="resume">Resume</Tabs.Tab>
             <Tabs.Tab value="settings">Settings</Tabs.Tab>
           </Tabs.List>
           <Tabs.Panel value="gallery">

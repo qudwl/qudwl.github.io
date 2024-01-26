@@ -21,6 +21,13 @@
     "isWebApp": true
   },
   {
+    "name": "React Password Generator",
+    "description": "This is a description of project 2",
+    "url": "https://qudwl.github.io/react-password-generator",
+    "repository": "https://qudwl.com/react-password-generator/",
+    "isWebApp": true
+  },
+  {
     "name": "MAUI Projects",
     "description": "This is a description of project 2",
     "url": "https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2021/10/shadow.png",
