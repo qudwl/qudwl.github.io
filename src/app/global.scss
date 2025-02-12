@@ -1,11 +1,12 @@
 :root {
     --padding: 24px;
+    --header-height: 108px;
 }
 
 body {
   margin: 0px;
   font-family: var(--font-geist-sans);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

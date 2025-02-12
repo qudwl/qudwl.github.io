@@ -1,6 +1,6 @@
 const HeaderMenu = () => {
     return <nav>
-        <button>Main</button>
+        <button>Home</button>
         <button>Projects</button>
         <button>About</button>
         <button>Settings</button>
