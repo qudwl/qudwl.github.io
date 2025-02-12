@@ -1,0 +1,16 @@
+.tab {
+    background: none;
+    border: none;
+    font-family: var(--font-geist-sans);
+    font-size: 16px;
+    padding: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &[aria-selected="true"] {
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+    }
+}
