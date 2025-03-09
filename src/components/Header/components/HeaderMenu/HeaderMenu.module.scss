@@ -4,12 +4,14 @@
     font-family: var(--font-geist-sans);
     font-size: 16px;
     padding: 16px;
+    color: #000;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
     }
 
-    &[aria-selected="true"] {
+    &[aria-current="true"] {
         font-weight: bold;
         border-bottom: 2px solid #000;
     }
