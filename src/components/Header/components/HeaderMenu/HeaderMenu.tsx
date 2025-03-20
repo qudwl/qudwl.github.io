@@ -57,6 +57,7 @@ const VerticalMenu: React.FC<HeaderMenuProps> = ({ routes, page, setPage }) => {
 const HeaderMenu: React.FC<HeaderMenuProps> = ({ routes, page, setPage }) => {
   return (
     <>
+      <HorizontalMenu routes={routes} page={page} setPage={setPage} />
       <VerticalMenu routes={routes} page={page} setPage={setPage} />
     </>
   );
