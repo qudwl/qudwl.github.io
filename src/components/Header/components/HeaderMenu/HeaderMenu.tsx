@@ -30,6 +30,7 @@ const HorizontalMenu: React.FC<HeaderMenuProps> = ({ routes, page, setPage }) =>
 
 const VerticalMenu: React.FC<HeaderMenuProps> = ({ routes, page, setPage }) => {
   return (
+    // @ts-ignore
     <Menu hiddenFrom="md" menuItemTabIndex={0}>
       <Menu.Target>
         <ActionIcon size="xl" variant="transparent" color="black">
