@@ -21,7 +21,7 @@ export default function App() {
         setPage={setPage}
         routes={routes.map((route) => route.name)}
       />
-      {Route && <Route className="maxWidth" />}
+      {Route && <Route className="maxWidth" setPage={setPage} />}
     </MantineProvider>
   );
 }
