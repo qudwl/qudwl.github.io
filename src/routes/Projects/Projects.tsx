@@ -1,6 +1,6 @@
 import Page from '@/components/Page';
 import SimpleGrid from '@/components/SimpleGrid';
-import { PageProps, Technologies } from '../types';
+import { RouteProps, Technologies } from '../types';
 import { ProjectCard, ProjectCardProps } from './components/ProjectCard';
 
 const projects: ProjectCardProps[] = [
@@ -12,7 +12,7 @@ const projects: ProjectCardProps[] = [
   },
 ];
 
-const Projects: React.FC<PageProps> = ({ className }) => {
+const Projects: React.FC<RouteProps> = ({ className }) => {
   const items = projects.map((item) => (
     <ProjectCard
       title={item.title}
