@@ -1,0 +1,15 @@
+@use '/src/variables' as v;
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image {
+  width: 200px;
+  max-width: 40vw;
+  max-height: 40vw;
+  border-radius: 200px;
+  border: v.$xxsmall-size solid v.$background-base;
+}

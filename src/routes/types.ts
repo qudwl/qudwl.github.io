@@ -1,4 +1,4 @@
-export type PageProps = {
+export type RouteProps = {
   className?: string;
   setPage?: React.Dispatch<React.SetStateAction<string>>;
 };

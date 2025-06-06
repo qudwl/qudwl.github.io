@@ -1,5 +1,6 @@
 import { useId } from 'react';
 import styles from './IconButton.module.scss';
+import Button from '../Button';
 import { IconButtonProps } from './type';
 
 const IconButton: React.FC<IconButtonProps> = ({
@@ -13,18 +14,19 @@ const IconButton: React.FC<IconButtonProps> = ({
 
   const Icon = icon;
   return (
-    <button
+    <Button
       className={styles.iconButton}
       onClick={onClick}
-      aria-labelledby={id}
-      aria-selected={ariaSelected}
+      ariaLabelledBy={id}
+      ariaSelected={ariaSelected}
       role={role ? role : undefined}
+      type="transparent"
     >
       <Icon className={styles.icon} color={ariaSelected ? 'black' : 'gray'} />
       <span className={styles.label} id={id}>
         {label}
       </span>
-    </button>
+    </Button>
   );
 };
 

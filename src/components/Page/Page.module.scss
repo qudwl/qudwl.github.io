@@ -2,5 +2,7 @@
 
 .page {
   width: v.$container-width;
+  max-width: 95%;
   margin-top: v.$medium-size;
+  padding: v.$medium-size;
 }

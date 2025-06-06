@@ -1,6 +1,6 @@
 import { IconAppWindow, IconHome, IconSettings, IconUserCircle } from '@tabler/icons-react';
-import { About, Home, Projects, Settings } from './pages';
-import { Route } from './types';
+import { Route } from '../types';
+import { About, Home, Projects, Settings } from './index';
 
 const routes: Route[] = [
   {

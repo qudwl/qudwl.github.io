@@ -1,4 +1,4 @@
-import { Technologies } from '@/pages/types';
+import { Technologies } from '@/routes/types';
 
 export type TechIconTypes = {
   tech: Technologies;

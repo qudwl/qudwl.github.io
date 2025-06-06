@@ -1,50 +1,50 @@
 @use '/src/variables' as v;
 
 .iconButton {
-    background: none;
-    border: none;
-    padding: v.$xsmall-size; 
-    position: relative;
-    border-radius: v.$large-size;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  position: relative;
+  border-radius: v.$large-size !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: v.$xsmall-size !important;
+
+  .icon {
+    transition: transform 250ms ease-in-out;
+  }
+
+  &[aria-selected='true'] {
+    background-color: v.$background-base !important;
+
     .icon {
-        transition: transform 250ms ease-in-out;
+      transform: scale(1.1);
     }
+  }
 
-    &[aria-selected=true] {
-        background-color: v.$background-base;
+  & .label {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+    background-color: rgba(v.$background-base, 0.8);
+    transition:
+      opacity 250ms ease-in-out,
+      transform 250ms ease-in-out;
+    border-radius: 1rem;
+    padding: 0.25rem;
+  }
 
-        .icon {
-            transform: scale(1.1);
-        }
+  &:focus,
+  &:hover {
+    .icon {
+      transform: scale(0.9);
     }
+  }
 
-    & .label {
-        opacity: 0;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, 10%);
-        background-color: rgba(v.$background-base, 0.8);
-        transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
-        border-radius: 1rem;
-        padding: 0.25rem;
+  &:focus-visible {
+    .label {
+      opacity: 1;
+      transform: translate(-50%, 40%);
     }
-
-    &:focus, &:hover {
-        .icon {
-            transform: scale(0.9);
-        }
-    }
-
-    &:focus-visible {
-        .label {
-            opacity: 1;
-            transform: translate(-50%, 40%);
-        }
-    }
+  }
 }
-

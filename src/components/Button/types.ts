@@ -5,5 +5,6 @@ export interface ButtonProps {
   type?: 'default' | 'transparent' | 'filled';
   onClick?: () => void;
   className?: string;
-  key?: number;
+  key?: string;
+  ariaLabelledBy?: string;
 }

@@ -4,6 +4,14 @@ body {
   background-color: v.$background-base;
 }
 
+header,
+main,
+div,
+button,
+section {
+  box-sizing: border-box;
+}
+
 .route {
   width: v.$container-width;
 }

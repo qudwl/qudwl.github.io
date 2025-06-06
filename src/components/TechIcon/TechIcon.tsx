@@ -6,7 +6,7 @@ import {
   IconBrandSwift,
   IconBrandTypescript,
 } from '@tabler/icons-react';
-import { Technologies } from '@/pages/types';
+import { Technologies } from '@/routes/types';
 import { TechIconTypes } from './types';
 
 const TechIcon: React.FC<TechIconTypes> = ({ tech }) => {
