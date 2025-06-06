@@ -1,4 +1,6 @@
-import { Card, SimpleGrid, Stack, Text, Title } from '@mantine/core';
+import { Stack, Text, Title } from '@mantine/core';
+import Card from '@/components/Card';
+import SimpleGrid from '@/components/SimpleGrid';
 import { TechIcon } from '@/components/TechIcon';
 import { Technologies } from '@/pages/types';
 import { ProjectCardProps } from './types';
@@ -6,11 +8,11 @@ import { ProjectCardProps } from './types';
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, url, description, tech }) => {
   const technologies = tech.map((item: Technologies) => <TechIcon tech={item} />);
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder component="a" href={url}>
+    <Card recessed>
       <Stack gap="md">
         <Title>{title}</Title>
         <Text>{description}</Text>
-        <SimpleGrid cols={12}>{technologies}</SimpleGrid>
+        <SimpleGrid columns={12}>{technologies}</SimpleGrid>
       </Stack>
     </Card>
   );

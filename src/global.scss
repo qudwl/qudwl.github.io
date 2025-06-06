@@ -1,0 +1,16 @@
+@use './variables' as v;
+
+body {
+  background-color: v.$background-base;
+}
+
+.route {
+  width: v.$container-width;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,9 @@
+import { TablerIcon } from '@tabler/icons-react';
 import { PageProps } from './pages';
 
-export type Route = {
+export type Route = { route: React.FC<PageProps> } & RouteLabel;
+
+export type RouteLabel = {
   name: string;
-  route: React.FC<PageProps>;
+  icon: TablerIcon;
 };

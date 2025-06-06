@@ -1,0 +1,13 @@
+@use '/src/variables' as v;
+
+.header {
+    width: v.$container-width;
+    margin-top: v.$medium-size;
+    top: v.$medium-size;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$background-forward;
+    padding-left: v.$medium-size;
+}

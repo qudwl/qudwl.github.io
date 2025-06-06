@@ -1,4 +1,5 @@
-import { SimpleGrid, Stack, Title } from '@mantine/core';
+import Page from '@/components/Page';
+import SimpleGrid from '@/components/SimpleGrid';
 import { PageProps, Technologies } from '../types';
 import { ProjectCard, ProjectCardProps } from './components/ProjectCard';
 
@@ -22,10 +23,10 @@ const Projects: React.FC<PageProps> = ({ className }) => {
   ));
 
   return (
-    <Stack className={className} p="xs" pt="lg" gap="lg">
-      <Title order={1}>Projects</Title>
-      <SimpleGrid cols={3}>{items}</SimpleGrid>
-    </Stack>
+    <Page className={className}>
+      <h1>Projects</h1>
+      <SimpleGrid columns={3}>{items}</SimpleGrid>
+    </Page>
   );
 };
 

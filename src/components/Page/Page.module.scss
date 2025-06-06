@@ -1,0 +1,6 @@
+@use '/src/variables' as v;
+
+.page {
+  width: v.$container-width;
+  margin-top: v.$medium-size;
+}

@@ -1,0 +1,21 @@
+@use '/src/variables' as v;
+
+.button {
+    border-radius: v.$xxsmall-size;
+
+    .default {
+        background: v.$background-base;
+    }
+
+    .transparent {
+        background: none;
+        border: none;
+    }
+
+    .filled {
+        background: black;
+    }
+}
+
+
+

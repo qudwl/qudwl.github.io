@@ -6,7 +6,7 @@ import { Header } from './components/Header';
 import { routes } from './routes';
 import { theme } from './theme';
 
-import './global.css';
+import './global.scss';
 
 export default function App() {
   const [page, setPage] = useState('Home');
@@ -19,9 +19,11 @@ export default function App() {
         className="maxWidth"
         page={page}
         setPage={setPage}
-        routes={routes.map((route) => route.name)}
+        routes={routes.map((route) => {
+          return { name: route.name, icon: route.icon };
+        })}
       />
-      {Route && <Route className="maxWidth" setPage={setPage} />}
+      {Route && <Route className="route" setPage={setPage} />}
     </MantineProvider>
   );
 }

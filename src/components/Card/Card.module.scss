@@ -1,0 +1,13 @@
+@use '/src/variables' as v;
+
+.card {
+    padding: v.$xsmall-size;
+    border-radius: v.$xsmall-size;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: v.$background-forward;
+
+    .recessed {
+        box-shadow: none;
+        background-color: v.$background-base;
+    }
+}

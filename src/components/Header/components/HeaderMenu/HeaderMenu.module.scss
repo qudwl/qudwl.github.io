@@ -1,0 +1,7 @@
+@use '/src/variables' as v;
+
+.headerMenu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: v.$xxsmall-size;
+}
