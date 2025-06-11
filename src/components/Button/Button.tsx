@@ -10,8 +10,11 @@ const Button: React.FC<ButtonProps> = ({
   children,
   key,
   onClick,
+  onKeyDown,
   role = 'button',
   type = 'default',
+  ref,
+  tabIndex,
 }) => {
   console.log(type);
   return (
@@ -22,6 +25,9 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       key={key}
       role={role}
+      ref={ref ? ref : undefined}
+      tabIndex={tabIndex ? tabIndex : undefined}
+      onKeyDown={onKeyDown ? onKeyDown : undefined}
     >
       {children}
     </button>

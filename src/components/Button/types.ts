@@ -7,4 +7,7 @@ export interface ButtonProps {
   className?: string;
   key?: string;
   ariaLabelledBy?: string;
+  ref?: React.Ref<HTMLButtonElement>;
+  tabIndex?: number;
+  onKeyDown?: (event: React.KeyboardEvent<HTMLButtonElement>) => void;
 }

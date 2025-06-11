@@ -1,0 +1,9 @@
+@use '/src/variables' as v;
+
+.contactMe {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: v.$xxsmall-size;
+  justify-content: center;
+}

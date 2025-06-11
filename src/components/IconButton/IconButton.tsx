@@ -9,6 +9,9 @@ const IconButton: React.FC<IconButtonProps> = ({
   label,
   ariaSelected = false,
   role,
+  ref,
+  tabIndex,
+  onKeyDown,
 }) => {
   const id = useId();
 
@@ -21,6 +24,9 @@ const IconButton: React.FC<IconButtonProps> = ({
       ariaSelected={ariaSelected}
       role={role ? role : undefined}
       type="transparent"
+      ref={ref ? ref : undefined}
+      onKeyDown={onKeyDown ? onKeyDown : undefined}
+      tabIndex={tabIndex}
     >
       <Icon className={styles.icon} color={ariaSelected ? 'black' : 'gray'} />
       <span className={styles.label} id={id}>
