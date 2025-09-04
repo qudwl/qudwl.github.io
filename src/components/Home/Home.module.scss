@@ -1,0 +1,29 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.home {
+    @include section;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        font-size: $font-size-xxxxl;
+        font-weight: 200;
+        margin: 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: $font-size-xl;
+        font-weight: 400;
+        margin: $spacing-m 0 0 0;
+
+        strong {
+            font-weight: 900;
+        }
+
+        & + p {
+            font-size: $font-size-l;
+        }
+    }
+}

@@ -7,7 +7,7 @@
 
     ul {
         display: flex;
-        gap: $spacing-m;
+        gap: $spacing-l;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -20,7 +20,7 @@
     .menuLink {
         text-decoration: none;
         color: $color-text;
-        font-size: $font-size-md;
+        font-size: $font-size-m;
 
         &:hover {
             padding: $spacing-s 0;

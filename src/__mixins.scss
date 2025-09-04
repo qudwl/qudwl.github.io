@@ -11,3 +11,12 @@
         @content;
     }
 }
+
+@mixin section {
+    width: $section-width;
+    max-width: 100vw;
+    min-height: $section-height;
+    display: flex;
+    flex-direction: column;
+    padding: $spacing-l;
+}

@@ -25,7 +25,7 @@ const DesktopMenu = () => {
 }
 
 const MenuLink = ({ name, href, active }: { name: string, href: string, active: boolean }) => {
-    return <a className={cn(styles.menuLink, active && styles.active)} href={href}>{name}</a>;
+    return <a className={cn(styles.menuLink, active && styles.active)} href={`#${href}`}>{name}</a>;
 }
 
 export default DesktopMenu;
