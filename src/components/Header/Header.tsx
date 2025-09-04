@@ -3,10 +3,10 @@ import Logo from "./components/Logo";
 import MobileMenu from "./components/MobileMenu";
 import styles from "./Header.module.scss";
 
-const Header = () => {
+const Header = ({ active }: { active: number }) => {
     return <header className={styles.header}>
         <Logo />
-        <DesktopMenu />
+        <DesktopMenu active={active} />
         <MobileMenu />
     </header>;
 }

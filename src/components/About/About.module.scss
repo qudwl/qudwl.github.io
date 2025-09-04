@@ -1,0 +1,40 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.about {
+  @include section;
+  padding-top: 10vh;
+
+  h2 {
+    @include heading;
+    font-size: $font-size-xxl;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    p {
+      background-color: $color-indigo;
+      padding: $spacing-l $spacing-m;
+      max-width: 300px;
+      box-sizing: border-box;
+      @include elevation("medium");
+
+      @include mobile {
+        max-width: 40vw;
+      }
+
+      &:nth-child(n) {
+        background-color: $color-subtle;
+        color: $color-background;
+      }
+
+      &:nth-child(2n) {
+        background-color: $color-background;
+        color: $color-text;
+      }
+    }
+  }
+}

@@ -6,9 +6,9 @@
     justify-content: center;
 
     h1 {
+        @include heading;
         text-align: center;
         font-size: $font-size-xxxxl;
-        font-weight: 200;
         margin: 0;
     }
 
