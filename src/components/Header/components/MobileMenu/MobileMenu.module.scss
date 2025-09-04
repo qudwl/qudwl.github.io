@@ -1,0 +1,11 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.mobileMenu {
+    display: flex;
+    gap: $spacing-s;
+
+    @include desktop {
+        display: none;
+    }
+}

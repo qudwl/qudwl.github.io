@@ -1,0 +1,36 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.desktopMenu {
+    display: flex;
+    gap: $spacing-s;
+
+    ul {
+        display: flex;
+        gap: $spacing-m;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    .menuLink {
+        text-decoration: none;
+        color: $color-text;
+        font-size: $font-size-md;
+
+        &:hover {
+            padding: $spacing-s 0;
+            border-bottom: 1px solid $color-text;
+        }
+
+        &.active {
+            font-weight: bold;
+            padding: $spacing-s 0;
+            border-bottom: 2px solid $color-text;
+        }
+    }
+}
