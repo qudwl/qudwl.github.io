@@ -1,0 +1,6 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.projects {
+  @include section;
+}

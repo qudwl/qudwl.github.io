@@ -1,0 +1,6 @@
+@use "@/__variables" as *;
+@use "@/__mixins" as *;
+
+.contact {
+  @include section;
+}
