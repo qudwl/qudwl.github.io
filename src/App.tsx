@@ -2,13 +2,18 @@ import Header from "./components/Header"
 import Home from "./components/Home"
 import About from "./components/About"
 import Skills from "./components/Skills"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 import { useState, useRef, useEffect } from "react"
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
-  const sections = [homeRef, aboutRef, skillsRef];
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
+  const sections = [homeRef, aboutRef, skillsRef, projectsRef, contactRef];
   const [closestId, setClosestId] = useState(0);
 
   useEffect(() => {
@@ -47,6 +52,9 @@ function App() {
       <Home ref={homeRef} />
       <About ref={aboutRef} />
       <Skills ref={skillsRef} />
+      <Projects ref={projectsRef} />
+      <Contact ref={contactRef} />
+      <Footer />
     </>
   )
 }
