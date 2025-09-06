@@ -1,12 +1,14 @@
 import Header from "./components/Header"
 import Home from "./components/Home"
 import About from "./components/About"
+import Skills from "./components/Skills"
 import { useState, useRef, useEffect } from "react"
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const sections = [homeRef, aboutRef];
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const sections = [homeRef, aboutRef, skillsRef];
   const [closestId, setClosestId] = useState(0);
 
   useEffect(() => {
@@ -44,6 +46,7 @@ function App() {
       <Header active={closestId} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
+      <Skills ref={skillsRef} />
     </>
   )
 }
