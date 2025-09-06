@@ -5,11 +5,6 @@
   @include section;
   padding-top: 10vh;
 
-  h2 {
-    @include heading;
-    font-size: $font-size-xxl;
-  }
-
   div {
     display: flex;
     flex-wrap: wrap;
