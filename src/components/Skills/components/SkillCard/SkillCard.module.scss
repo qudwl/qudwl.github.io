@@ -1,7 +1,18 @@
 .skillCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--mantine-shadow-sm) !important;
+  }
+}
+
+.iconContainer {
+  color: var(--mantine-color-indigo-solid);
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  padding: var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-md);
+  background-color: var(--mantine-color-indigo-light);
 }

@@ -1,1 +1,1 @@
-export { default } from "./DesktopMenu";
+export { default } from './DesktopMenu'

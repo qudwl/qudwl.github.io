@@ -1,19 +1,85 @@
-@use "@/__variables" as *;
-@use "@/__mixins" as *;
-
 .header {
   position: sticky;
-  top: $spacing-s;
-  width: $section-width;
-  max-width: calc(100vw - $spacing-l * 2);
-  padding: $spacing-l;
+  top: 8px;
+  width: 960px;
+  max-width: calc(100vw - var(--mantine-spacing-xl) * 2);
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-xl);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0);
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For older Safari versions */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--mantine-radius-md);
+  border: 1px solid var(--mantine-color-default-border);
+  box-shadow: var(--mantine-shadow-xs);
+  margin-top: 8px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
 
-  @include elevation("low");
+  [data-mantine-color-scheme="dark"] & {
+    background-color: rgba(26, 27, 30, 0.7);
+  }
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  gap: var(--mantine-spacing-lg);
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menuLink {
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 200ms ease, color 200ms ease;
+
+  &:hover {
+    color: var(--mantine-color-indigo-solid);
+    border-bottom: 2px solid var(--mantine-color-indigo-light-hover);
+  }
+
+  &.active {
+    color: var(--mantine-color-indigo-solid);
+    font-weight: 700;
+    border-bottom: 2px solid var(--mantine-color-indigo-solid);
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.drawerLink {
+  display: block;
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-md);
+  text-decoration: none;
+  color: var(--mantine-color-text);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: var(--mantine-radius-sm);
+  transition: background-color 200ms ease, color 200ms ease;
+
+  &:hover {
+    background-color: var(--mantine-color-indigo-light);
+    color: var(--mantine-color-indigo-solid);
+  }
+
+  &.active {
+    background-color: var(--mantine-color-indigo-light);
+    color: var(--mantine-color-indigo-solid);
+    font-weight: 700;
+  }
 }

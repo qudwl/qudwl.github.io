@@ -1,7 +1,7 @@
-import type { IconType } from "react-icons";
+import type { IconType } from 'react-icons'
 
-export type SkillCardProps = {
-  name: string;
-  Icon: IconType;
-  level: number;
-};
+export interface SkillCardProps {
+  name: string
+  Icon: IconType
+  level: number
+}
