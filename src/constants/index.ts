@@ -1,2 +1,2 @@
-export * from "./ids";
-export * from "./menuItems";
+export * from './ids'
+export * from './menuItems'

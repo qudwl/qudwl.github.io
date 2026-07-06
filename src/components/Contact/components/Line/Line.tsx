@@ -1,7 +1,7 @@
-import styles from "./Line.module.scss";
+import styles from './Line.module.scss'
 
 const Line = () => {
-    return <div className={styles.line} />;
+  return <div className={styles.line} />
 }
 
-export default Line;
+export default Line

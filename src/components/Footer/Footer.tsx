@@ -1,12 +1,22 @@
-import styles from "./Footer.module.scss"
-import { forwardRef } from "react";
+import { Container, Text } from '@mantine/core'
 
-const Footer = forwardRef<HTMLDivElement>((_, ref) => {
-    return (
-        <footer ref={ref} className={styles.footer}>
-            <p>updated 2025 by Byeongji Lim.</p>
-        </footer>
-    );
-});
+const Footer = () => {
+  return (
+    <footer
+      style={{
+        width: '100%',
+        borderTop: '1px solid var(--mantine-color-default-border)',
+        padding: 'var(--mantine-spacing-xl) 0',
+        marginTop: 'auto',
+      }}
+    >
+      <Container size="md">
+        <Text size="sm" c="dimmed" ta="center">
+          © {new Date().getFullYear()} by Byeongji Lim. All rights reserved.
+        </Text>
+      </Container>
+    </footer>
+  )
+}
 
-export default Footer;
+export default Footer
