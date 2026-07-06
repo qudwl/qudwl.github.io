@@ -8,19 +8,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'A11y Helper',
+    title: 'SoberVault',
     description:
-      'A browser extension designed to audit web pages for accessibility issues, highlighting contrast problems, missing alt text, and keyboard navigation gaps in real time.',
-    technologies: ['React', 'TypeScript', 'Web Extensions API', 'Sass'],
-    githubUrl: 'https://github.com/qudwl/a11y-helper',
-  },
-  {
-    title: 'EcoShop',
-    description:
-      'A fast, fully accessible e-commerce storefront prototype built to meet strict WCAG 2.1 AA requirements, featuring screen-reader friendly filter controls and semantic markup.',
-    technologies: ['Next.js', 'React', 'Sass Modules', 'Aria-Live'],
-    githubUrl: 'https://github.com/qudwl/ecoshop',
-    liveUrl: 'https://ecoshop-demo.example.com',
+      'Your secure, local-first recovery vault. Track streaks, navigate urges, and secure your personal progress with 100% private, client-side encryption.',
+    technologies: ['React', 'TypeScript', 'Dexie.js', 'Web Crypto API', 'PWA'],
+    githubUrl: 'https://github.com/qudwl/SoberVault',
+    liveUrl: 'https://qudwl.com/SoberVault',
   },
   {
     title: 'qudwl.github.io',
@@ -28,6 +21,14 @@ export const projects: Project[] = [
       'This personal portfolio site showcasing skills, background timeline, and recent projects. Fully responsive and converted to use Mantine components for standard visual excellence.',
     technologies: ['React', 'TypeScript', 'Vite', 'Mantine', 'Sass'],
     githubUrl: 'https://github.com/qudwl/qudwl.github.io',
-    liveUrl: 'https://qudwl.github.io',
+    liveUrl: 'https://qudwl.com',
+  },
+  {
+    title: 'React Password Generator',
+    description:
+      'A secure, local-first credential generator and vault. Generate cryptographically secure passwords, track custom metadata, and manage stored credentials locally.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Mantine'],
+    githubUrl: 'https://github.com/qudwl/react-password-generator',
+    liveUrl: 'https://qudwl.com/react-password-generator/',
   },
 ]
