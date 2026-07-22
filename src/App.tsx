@@ -7,6 +7,8 @@ import Home from './components/Home'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 
+import VoxelBackground from './components/VoxelBackground'
+
 function App() {
   const homeRef = useRef<HTMLDivElement>(null)
   const aboutRef = useRef<HTMLDivElement>(null)
@@ -49,6 +51,7 @@ function App() {
 
   return (
     <>
+      <VoxelBackground />
       <Header active={closestId} />
       <Home ref={homeRef} />
       <About ref={aboutRef} />
